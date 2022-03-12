@@ -27,7 +27,14 @@ function list {
 }
 function submodule {
 
-    git submodule status | awk '{print $2}'
+    if r=$(git submodule status | awk '{print $2}') && [ -n "${r}" ]
+    then
+        echo "${r}"
+
+        return 0
+    else
+        return 1
+    fi
 }
 
 if [ "${1}" ]
@@ -40,7 +47,8 @@ then
                 exit 0
             else
                 exit 1
-            fi ;;
+            fi
+            ;;
 
         init)
 
