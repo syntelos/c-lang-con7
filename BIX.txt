@@ -1,0 +1,11 @@
+
+This project includes a submodule, "bix", in directory "c-endian-bix".
+
+After the initial clone, the submodule must be initialized and updated.
+
+  cd c-endian-bix; git submodule init; git submodule update
+
+Alternatively
+
+  cd c-endian-bix; git submodule update --init
+

@@ -1,0 +1,11 @@
+
+This project includes a submodule, "bint", in directory "c-lang-bix/c-endian-bint".
+
+After the initial clone, the submodule must be initialized and updated.
+
+  cd c-lang-bix/c-endian-bint; git submodule init; git submodule update
+
+Alternatively
+
+  cd c-lang-bix/c-endian-bint; git submodule update --init
+
